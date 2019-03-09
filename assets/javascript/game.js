@@ -92,3 +92,11 @@ function reset() {
 console.log("current total is " + total);
 
 
+var doubleTouchStartTimestamp = 0;
+$(document).bind("touchstart", function(event){
+    var now = +(new Date());
+    if (doubleTouchStartTimestamp + 500 > now){
+        event.preventDefault();
+    };
+    doubleTouchStartTimestamp = now;
+});
