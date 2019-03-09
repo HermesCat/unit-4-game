@@ -15,3 +15,17 @@ h1{
 .container p {
     font-size: 16px;
 }
+
+ 
+@media only screen and (max-width : 320px)  { 
+    h1{
+        font-size:25px;;
+    }
+    .container h1 {
+        font-size: 20px;
+    }
+    .container p {
+        font-size: 12px;
+    }
+  }
+

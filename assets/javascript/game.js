@@ -14,7 +14,7 @@ var target = Math.floor(Math.random()* 101 + 19);
 console.log("The target number is " + target);
 
 //Display random number in the dom..............................
-$("#totalNumber").html("<h2>" + target + "</h2>");
+$("#totalNumber").html("<h2>Target: " + target + "</h2>");
  
 
 //create on click event for crystal counter...................
@@ -86,7 +86,7 @@ function reset() {
   total= 0;
   target = Math.floor(Math.random()* 101 + 19);
   console.log("The target number is " + target);
-  $("#totalNumber").html("<h2>" + target + "</h2>");
+  $("#totalNumber").html("<h2>Target: " + target + "</h2>");
 }
 
 console.log("current total is " + total);
