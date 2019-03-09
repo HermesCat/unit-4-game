@@ -17,6 +17,10 @@ h1{
 }
 
  
+.disable-dbl-tap-zoom {
+    touch-action: manipulation;
+  }
+
 @media only screen and (max-width : 320px)  { 
     h1{
         font-size:25px;;
