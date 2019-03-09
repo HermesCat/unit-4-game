@@ -27,5 +27,17 @@ h1{
     .container p {
         font-size: 12px;
     }
+    .totalNumber{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .winBox {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .lossBox {
+        font-size: 12px;
+        font-weight: bold;
+    }
   }
 
