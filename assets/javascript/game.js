@@ -91,7 +91,7 @@ function reset() {
 
 console.log("current total is " + total);
 
-
+//....iphone double tap zoom fix........
 var doubleTouchStartTimestamp = 0;
 $(document).bind("touchstart", function(event){
     var now = +(new Date());
