@@ -3,6 +3,7 @@ var total = 0;
 var wins = 0;
 var losses = 0;
 
+
 //variable for each crystal....................................
 var crystal1 = Math.floor(Math.random() *11 + 1);
 var crystal2 = Math.floor(Math.random() *11 + 1);
@@ -15,11 +16,13 @@ console.log("The target number is " + target);
 
 //Display random number in the dom..............................
 $("#totalNumber").html("<h2>Target: " + target + "</h2>");
+$("#score").html("<h2>Score: " + total + "</h2>");
  
 
 //create on click event for crystal counter...................
 $(".crystal1").click(function() {
   total += crystal1;
+  $("#score").html("<h2>Score: " + total + "</h2>");
   console.log("Current total is " + total);
   if (total === target) {
     win();
@@ -31,6 +34,7 @@ $(".crystal1").click(function() {
 
 $(".crystal2").click(function() {
   total += crystal2;
+  $("#score").html("<h2>Score: " + total + "</h2>");
   console.log("Current total is " + total);
   if (total === target) {
     win();
@@ -42,6 +46,7 @@ $(".crystal2").click(function() {
 
 $(".crystal3").click(function() {
   total += crystal3;
+  $("#score").html("<h2>Score: " + total + "</h2>");
   console.log("Current total is " + total);
   if (total === target) {
     win();
@@ -53,6 +58,7 @@ $(".crystal3").click(function() {
 
 $(".crystal4").click(function() {
   total += crystal4;
+  $("#score").html("<h2>Score: " + total + "</h2>");
   console.log("Current total is " + total);
   if (total === target) {
     win();
@@ -85,6 +91,7 @@ function lose() {
 function reset() {
   total= 0;
   target = Math.floor(Math.random()* 101 + 19);
+  $("#score").html("<h2>Score: " + total + "</h2>");
   console.log("The target number is " + target);
   $("#totalNumber").html("<h2>Target: " + target + "</h2>");
 }
