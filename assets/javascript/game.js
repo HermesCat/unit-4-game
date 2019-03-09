@@ -93,11 +93,10 @@ console.log("current total is " + total);
 
 
 //iphone zoom problems
-var lastTouchEnd = 0;
-document.addEventListener('touchend', function (event) {
-    var now = (new Date()).getTime();
-    if (now - lastTouchEnd <= 300) {
-        event.preventDefault();
-    }
-    lastTouchEnd = now;
-}, false);
+$(document).click(function(event) {
+  element = document.elementFromPoint(event.clientX, event.clientY);
+  if(document.getElementById("div_excluded_from_doubletap").contains(element)) {
+      event.preventDefault();
+      clickFunction(element);
+  }
+});
