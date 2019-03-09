@@ -39,8 +39,6 @@ h1{
         font-size: 12px;
         font-weight: bold;
     }
-    button {
-        touch-action: manipulation;
-    }
+    
   }
 
